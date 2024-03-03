@@ -1,0 +1,76 @@
+version: "2.0"
+
+stories:
+  - story: Book appointment
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: book_appointment
+      - action: utter_ask_date_time
+      - intent: provide_date_and_time
+      - action: utter_confirm_appointment
+
+  - story: Cancel appointment
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: cancel_appointment
+      - action: utter_confirm_cancellation
+
+  - story: Reschedule appointment
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: reschedule_appointment
+      - action: utter_ask_date_time
+      - intent: provide_date_and_time
+      - action: utter_confirm_rescheduling
+
+  - story: Provide availability
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: provide_availability
+      - action: utter_ask_date_time
+
+  - story: Provide name
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: provide_name
+      - action: utter_ask_name_phone
+
+  - story: Provide phone number
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: provide_phone_number
+      - action: utter_ask_name_phone
+
+  - story: Provide date
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: provide_date
+      - action: utter_ask_date_time
+
+  - story: Provide time
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: provide_time
+      - action: utter_ask_time
+
+  - story: Provide date and time
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: provide_date_and_time
+      - action: utter_ask_date_time
+
+  - story: Goodbye
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: goodbye
+      - action: utter_goodbye

@@ -1,0 +1,31 @@
+{
+  "responseCodeData": {
+    "succCode": {
+      "APPOINTMENT_RES001": "Appointment details fetched successfully",
+      "APPOINTMENT_RES002": "Appointment scheduled successfully",
+      "APPOINTMENT_RES003": "Appointment rescheduled successfully",
+      "APPOINTMENT_RES004": "Appointment cancelled successfully",
+      "SLOT_RES001": "Slot details fetched successfully",
+      "SLOT_RES002": "Slot details added successfully",
+      "SLOT_RES003": "Slot details updated successfully",
+      "SLOT_RES004": "Slot details deleted successfully",
+      "TRANSCRIBE_RES001": "Data transcribed successfully",
+      "TRANSCRIBE_RES002": "Unfortunately, I couldn't get what you said. So could you please come again?",
+      "MOCK_RES001": "Mock database tables added successfully",
+      "MOCK_RES002": "Mock database tables deleted successfully"
+    },
+    "errCode": {
+      "APPOINTMENT_ERR001": "Error in fetching appointment details",
+      "APPOINTMENT_ERR002": "Error in scheduling appointment",
+      "APPOINTMENT_ERR003": "Error in rescheduling appointment",
+      "APPOINTMENT_ERR004": "Error in cancelling appointment",
+      "SLOT_ERR001": "Error in fetching slot details",
+      "SLOT_ERR002": "Error in adding slot details",
+      "SLOT_ERR003": "Error in updating slot details",
+      "SLOT_ERR004": "Error in deleting slot details",
+      "TRANSCRIBE_ERR001": "Error in fetching transcribing data",
+      "MOCK_ERR001": "Error in adding mock database tables",
+      "MOCK_ERR002": "Error in deleting mock database tables"
+    }
+  }
+}

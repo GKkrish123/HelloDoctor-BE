@@ -1,0 +1,43 @@
+version: "2.0"
+
+intents:
+  - greet
+  - book_appointment
+  - cancel_appointment
+  - reschedule_appointment
+  - provide_availability
+  - affirm
+  - deny
+  - provide_number
+  - provide_name
+  - provide_phone_number
+  - provide_information
+  - goodbye
+  - provide_date
+  - provide_time
+  - provide_date_and_time
+
+entities:
+  - name
+  - phone_number
+  - date
+  - time
+  - number
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+  utter_ask_date_time:
+    - text: "Sure, when would you like to schedule the appointment?"
+  utter_ask_name_phone:
+    - text: "Can I have your name and phone number please?"
+  utter_confirm_appointment:
+    - text: "Your appointment has been booked. See you then!"
+  utter_confirm_cancellation:
+    - text: "Your appointment has been canceled."
+  utter_confirm_rescheduling:
+    - text: "Your appointment has been rescheduled."
+  utter_ask_time:
+    - text: "What time would you prefer?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."

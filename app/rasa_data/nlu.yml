@@ -1,0 +1,135 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hello
+      - Hi
+      - Hey
+      - Good morning
+      - Good afternoon
+      - Good evening
+
+  - intent: book_appointment
+    examples: |
+      - I want to book an appointment
+      - Can I schedule an appointment?
+      - I need to see the doctor
+      - Book an appointment for me
+      - Schedule appointment
+      - I want to schedule a visit
+      - I need to make an appointment
+      - Can you help me schedule an appointment?
+
+  - intent: cancel_appointment
+    examples: |
+      - I want to cancel my appointment
+      - Cancel my visit
+      - I need to cancel my appointment
+      - Can you help me cancel my appointment?
+      - I won't be able to make it, please cancel my appointment
+      - Please cancel my scheduled appointment
+      - I need to cancel my visit with the doctor
+
+  - intent: reschedule_appointment
+    examples: |
+      - I want to reschedule my appointment
+      - Can I change my appointment?
+      - I need to change the time of my appointment
+      - Reschedule my visit
+      - Can you help me reschedule my appointment?
+      - I need to reschedule my appointment with the doctor
+      - Please reschedule my appointment
+
+  - intent: provide_availability
+    examples: |
+      - What times are available?
+      - When can I come in?
+      - What times do you have open?
+      - What is the doctor's schedule?
+      - Can you tell me the available time slots?
+      - When is the doctor free?
+
+  - intent: affirm
+    examples: |
+      - Yes
+      - Yeah
+      - Sure
+      - Okay
+      - Alright
+      - Absolutely
+
+  - intent: deny
+    examples: |
+      - No
+      - No thanks
+      - Not now
+      - Maybe later
+
+  - intent: provide_name
+    examples: |
+      - My name is [Gokulakrishnan](name)
+      - It's [Jake](name)
+      - I'm [K.Paul](name)
+      - Call me [Yung Filly](name)
+      - [Harry Peniero](name) is my name
+
+  - intent: provide_phone_number
+    examples: |
+      - My phone number is [9757368191](phone_number)
+      - It's [+919757368191](phone_number)
+      - [09757368191](phone_number) is my phone number
+      - You can reach me at [9757368191](phone_number)
+
+  - intent: provide_information
+    examples: |
+      - My name is [Gokul](name) and my phone number is [8005550100](phone_number)
+      - [Gokul](name), [8005550100](phone_number)
+      - It's [Gokul](name), my phone number is [8005550100](phone_number)
+      - [Gokul](name) and my phone number is [8005550100](phone_number)
+      - [Gokul](name), you can reach me at [8005550100](phone_number)
+
+  - intent: goodbye
+    examples: |
+      - Bye
+      - Goodbye
+      - See you later
+      - Bye bye
+      - Have a great day
+      - Farewell
+      - Talk to you later
+
+  - intent: provide_number
+    examples: |
+      - [1](number)
+      - [2](number)
+      - [35677989](number)
+      - [4](number)
+      - [89](number)
+      - [57675](number)
+      - [10034769780](number)
+
+  - intent: provide_date
+    examples: |
+      - I am available on [31/12/2005](date)
+      - [tomorrow](date) works for me
+      - How about [day after tomorrow](date)?
+      - [today](date) is good for me
+      - I can come in on [sunday](date)
+
+  - intent: provide_time
+    examples: |
+      - I am available at [10:45](time)
+      - [10hrs 45mins](time) works for me
+      - How about [10:45 PM](time)?
+      - [10:45 AM](time) is good for me
+      - I can come in at [morning 10](time)
+      - I can come in at [evening 5](time)
+
+  - intent: provide_date_and_time
+    examples: |
+      - I am available on [31st October](date) at [10:00 AM](time)
+      - [Next Wednesday](date) at [10:00 AM](time) works for me
+      - How about [today](date) at [10:00 AM](time)?
+      - [31/11/2024](date) at [10:00 AM](time) is good for me
+      - I can come in on [10th of May](date) at [10:00 AM](time)
