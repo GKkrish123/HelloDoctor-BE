@@ -9,6 +9,19 @@ nlu:
       - Good morning
       - Good afternoon
       - Good evening
+      - Hi there
+      - Howdy
+      - Greetings
+      - What's up
+      - Hey there
+      - Yo
+      - Hi, how can I help you?
+      - Hey, what's going on?
+      - Hello, how may I assist you today?
+      - Hi, how can I assist?
+      - Hello, what brings you here today?
+      - Hi, how can I help?
+      - Hello, how can I be of service?
 
   - intent: book_appointment
     examples: |
@@ -20,6 +33,18 @@ nlu:
       - I want to schedule a visit
       - I need to make an appointment
       - Can you help me schedule an appointment?
+      - I would like to book a doctor's appointment
+      - Can I arrange an appointment with the doctor?
+      - How can I set up a meeting with the doctor?
+      - I need to make a reservation for a doctor's appointment
+      - I'm looking to book an appointment with the doctor
+      - Can I book a slot to see the doctor?
+      - Is it possible to schedule a doctor's appointment?
+      - I'd like to make an appointment for a checkup
+      - Can I make an appointment to see the doctor?
+      - I want to arrange a consultation with the doctor
+      - I'd like to set up a meeting with the doctor
+      - How can I book an appointment with the doctor?
 
   - intent: cancel_appointment
     examples: |
@@ -30,6 +55,19 @@ nlu:
       - I won't be able to make it, please cancel my appointment
       - Please cancel my scheduled appointment
       - I need to cancel my visit with the doctor
+      - I'd like to cancel the appointment I made
+      - Is it possible to cancel my doctor's appointment?
+      - Can I cancel the meeting with the doctor?
+      - How do I cancel my appointment?
+      - What's the process for cancelling an appointment?
+      - How can I revoke my appointment with the doctor?
+      - I need to terminate my doctor's appointment
+      - I'd like to withdraw my reservation with the doctor
+      - Is there a way to cancel the appointment?
+      - What's the procedure for cancelling my visit?
+      - How do I nullify my scheduled appointment?
+      - Can I call off my appointment with the doctor?
+      - I want to retract my request for an appointment
 
   - intent: reschedule_appointment
     examples: |
@@ -40,6 +78,19 @@ nlu:
       - Can you help me reschedule my appointment?
       - I need to reschedule my appointment with the doctor
       - Please reschedule my appointment
+      - I'd like to rearrange my appointment
+      - How do I modify my appointment time?
+      - Can I change the date of my appointment?
+      - Is it possible to reschedule my meeting with the doctor?
+      - What's the process for changing my appointment?
+      - Can I adjust the time slot for my appointment?
+      - How can I alter my appointment schedule?
+      - I want to move my appointment to a different time
+      - Can I switch my appointment to another day?
+      - What do I need to do to reschedule my visit?
+      - Is there a way to adjust the timing of my appointment?
+      - How do I reschedule my consultation with the doctor?
+      - Can I modify the timing of my doctor's appointment?
 
   - intent: provide_availability
     examples: |
@@ -49,6 +100,20 @@ nlu:
       - What is the doctor's schedule?
       - Can you tell me the available time slots?
       - When is the doctor free?
+      - Do you have any openings today?
+      - What are the available appointment slots?
+      - Are there any time slots left?
+      - Can I see the doctor today?
+      - Is there any availability for tomorrow?
+      - When can I book an appointment?
+      - What's the earliest appointment I can get?
+      - Are there any vacant slots for today?
+      - Do you have any free slots tomorrow?
+      - How soon can I get an appointment?
+      - Can I get an appointment this week?
+      - What days is the doctor available?
+      - Are there any appointments available in the evening?
+      - Can I get an appointment for next week?
 
   - intent: affirm
     examples: |
@@ -58,6 +123,20 @@ nlu:
       - Okay
       - Alright
       - Absolutely
+      - Of course
+      - Indeed
+      - Definitely
+      - Affirmative
+      - Correct
+      - Certainly
+      - Sure thing
+      - Absolutely yes
+      - That's right
+      - That's correct
+      - Absolutely right
+      - I agree
+      - That works
+      - Fine
 
   - intent: deny
     examples: |
@@ -65,6 +144,22 @@ nlu:
       - No thanks
       - Not now
       - Maybe later
+      - Nope
+      - Sorry, no
+      - I don't think so
+      - Not really
+      - Negative
+      - I'm afraid not
+      - Unfortunately not
+      - I disagree
+      - I'll pass
+      - I'm not interested
+      - I'll decline
+      - I'm not sure
+      - I don't believe so
+      - I'm not in the mood
+      - I'm not inclined to
+      - I'm not feeling it
 
   - intent: provide_name
     examples: |
@@ -73,6 +168,20 @@ nlu:
       - I'm [K.Paul](name)
       - Call me [Yung Filly](name)
       - [Harry Peniero](name) is my name
+      - You can call me [Sophia](name)
+      - I prefer to go by [Alex](name)
+      - My name is [Ella](name) Smith
+      - It's [Daniel](name) Johnson
+      - [Sophie](name) is my first name
+      - My last name is [Brown](name)
+      - [Tom](name) is what you can call me
+      - [Olivia](name) is my given name
+      - [Jack](name) is my middle name
+      - [William](name) is my family name
+      - I'm known as [Emma](name) here
+      - [Liam](name) is what my friends call me
+      - My name is [Ava](name) Jones
+      - I respond to [Noah](name)
 
   - intent: provide_phone_number
     examples: |
@@ -80,6 +189,22 @@ nlu:
       - It's [+919757368191](phone_number)
       - [09757368191](phone_number) is my phone number
       - You can reach me at [9757368191](phone_number)
+      - My contact number is [8976543210](phone_number)
+      - You can call me at [9876543210](phone_number)
+      - Dial [1234567890](phone_number) to reach me
+      - You can contact me on [9876543210](phone_number)
+      - My phone line is [9876543210](phone_number)
+      - Reach me at [8005550100](phone_number)
+      - Here's my number: [1234567890](phone_number)
+      - Contact me on [9876543210](phone_number)
+      - My cell number is [9876543210](phone_number)
+      - You can text me at [1234567890](phone_number)
+      - Feel free to call me at [9876543210](phone_number)
+      - Get in touch with me at [9876543210](phone_number)
+      - Call me anytime at [9876543210](phone_number)
+      - Dial me at [9876543210](phone_number)
+      - Phone me at [9876543210](phone_number)
+      - Text me on [1234567890](phone_number)
 
   - intent: provide_information
     examples: |
@@ -88,6 +213,20 @@ nlu:
       - It's [Gokul](name), my phone number is [8005550100](phone_number)
       - [Gokul](name) and my phone number is [8005550100](phone_number)
       - [Gokul](name), you can reach me at [8005550100](phone_number)
+      - I am [Sarah](name) and you can contact me on [9876543210](phone_number)
+      - [Sarah](name), [9876543210](phone_number)
+      - It's [Sarah](name), my contact number is [9876543210](phone_number)
+      - [Sarah](name) and my phone number is [9876543210](phone_number)
+      - [Sarah](name), you can reach me at [9876543210](phone_number)
+      - My name is [John](name) and my phone number is [1234567890](phone_number)
+      - [John](name), [1234567890](phone_number)
+      - It's [John](name), my phone number is [1234567890](phone_number)
+      - [John](name) and my phone number is [1234567890](phone_number)
+      - [John](name), you can reach me at [1234567890](phone_number)
+      - I am [Emma](name) and you can contact me on [9876543210](phone_number)
+      - [Emma](name), [9876543210](phone_number)
+      - It's [Emma](name), my contact number is [9876543210](phone_number)
+      - [Emma](name) and my phone number is [9876543210](phone_number)
 
   - intent: goodbye
     examples: |
@@ -98,6 +237,19 @@ nlu:
       - Have a great day
       - Farewell
       - Talk to you later
+      - Catch you later
+      - Until next time
+      - Take care
+      - Bye for now
+      - See you soon
+      - So long
+      - See you around
+      - Adios
+      - Sayonara
+      - Later
+      - Peace out
+      - See you tomorrow
+      - Good night
 
   - intent: provide_number
     examples: |
@@ -108,6 +260,19 @@ nlu:
       - [89](number)
       - [57675](number)
       - [10034769780](number)
+      - [5678](number)
+      - [456](number)
+      - [789](number)
+      - [1000](number)
+      - [2000](number)
+      - [10000](number)
+      - [50000](number)
+      - [786786](number)
+      - [123456](number)
+      - [987654](number)
+      - [333](number)
+      - [888](number)
+      - [999](number)
 
   - intent: provide_date
     examples: |
@@ -116,6 +281,21 @@ nlu:
       - How about [day after tomorrow](date)?
       - [today](date) is good for me
       - I can come in on [sunday](date)
+      - How about [next Monday](date)?
+      - I prefer [next Thursday](date)
+      - Let's schedule for [next Friday](date)
+      - What about [this Saturday](date)?
+      - How about [next week](date)?
+      - Can we meet on [Thursday](date)?
+      - I'm free on [Wednesday](date)
+      - What date suits you?
+      - Do you have any availability [next month](date)?
+      - How about [today](date)?
+      - Let's schedule for [next month](date)
+      - Is [this week](date) convenient for you?
+      - How about [next year](date)?
+      - Let's meet [this Friday](date)
+      - Can we arrange something for [this month](date)?
 
   - intent: provide_time
     examples: |
@@ -125,6 +305,20 @@ nlu:
       - [10:45 AM](time) is good for me
       - I can come in at [morning 10](time)
       - I can come in at [evening 5](time)
+      - Let's meet at [noon](time)
+      - How about [3:30 PM](time)?
+      - I prefer [9:00 AM](time)
+      - What time would you prefer?
+      - Can we meet at [8:30](time)?
+      - How about [afternoon 1](time)?
+      - Is [2 PM](time) suitable for you?
+      - Let's schedule for [5 PM](time)
+      - I'm free after [3 PM](time)
+      - Can we meet at [11 AM](time)?
+      - What about [4:30](time)?
+      - I'm available until [8 PM](time)
+      - Let's plan for [7:45](time)
+      - What time do you suggest?
 
   - intent: provide_date_and_time
     examples: |
@@ -133,3 +327,18 @@ nlu:
       - How about [today](date) at [10:00 AM](time)?
       - [31/11/2024](date) at [10:00 AM](time) is good for me
       - I can come in on [10th of May](date) at [10:00 AM](time)
+      - What about [next Monday](date) at [3:30 PM](time)?
+      - I prefer [this Friday](date) at [2 PM](time)
+      - Let's schedule for [next month](date) at [noon](time)
+      - How about [next Thursday](date) at [9:30 AM](time)?
+      - Is [today](date) at [4 PM](time) suitable for you?
+      - What date and time would you prefer?
+      - Can we meet on [Wednesday](date) at [11 AM](time)?
+      - How about [tomorrow](date) at [3 PM](time)?
+      - Let's plan for [this week](date) at [6 PM](time)
+      - I'm available on [Friday](date) at [9 AM](time)
+      - What about [next year](date) at [10:45](time)?
+      - I prefer [Monday](date) at [8:30](time)
+      - How about [this weekend](date) at [2 PM](time)?
+      - Let's schedule for [next month](date) at [10:30](time)
+      - Is [next Tuesday](date) at [noon](time) good for you?
