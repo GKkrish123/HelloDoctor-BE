@@ -1,13 +1,13 @@
 from ..database import get_rasa_agent, generate_rasa_agent
 from ..response import get_response, responsedetails
-import nltk
+# import nltk
 from gtts import gTTS
 from playsound import playsound
 import speech_recognition as sr
 import io, os
 
-nltk.download('punkt')
-nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('stopwords')
 
 async def process_transcription(audio_bytes, session_data):
     try:
