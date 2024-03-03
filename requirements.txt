@@ -120,7 +120,6 @@ python-engineio==4.9.0
 python-multipart==0.0.9
 python-socketio==5.11.1
 pytz==2022.7.1
-pywin32==306
 PyYAML==6.0.1
 questionary==1.10.0
 randomname==0.1.5
