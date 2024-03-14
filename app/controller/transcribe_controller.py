@@ -1,45 +1,45 @@
 from ..database import get_rasa_agent, generate_rasa_agent
 from ..response import get_response, responsedetails
-import nltk
-from gtts import gTTS
-from playsound import playsound
-import speech_recognition as sr
+# import nltk
+# from gtts import gTTS
+# from playsound import playsound
+# import speech_recognition as sr
 import io, os
 
-nltk.download('punkt')
-nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('stopwords')
 
 async def process_transcription(audio_bytes, session_data):
     try:
         # for now doctor id as 1
         session_data["doctorid"] = 1
         queried_text = session_data.get("querytext", "")
-        if audio_bytes:
-            queried_text = await speech_to_text(audio_bytes)
+        # if audio_bytes:
+        #     queried_text = await speech_to_text(audio_bytes)
         intended_data = await parse_intent(queried_text)
         response = generate_response(session_data, **intended_data)
         # speak(response["reply_text"])
         return get_response("TRANSCRIBE_RES001", response, 200)
-    except sr.UnknownValueError:
-        # speak(responsedetails["responseCodeData"]["succCode"]["TRANSCRIBE_RES002"])
-        return get_response("TRANSCRIBE_RES002", None, 200)
+    # except sr.UnknownValueError:
+    #     # speak(responsedetails["responseCodeData"]["succCode"]["TRANSCRIBE_RES002"])
+    #     return get_response("TRANSCRIBE_RES002", None, 200)
     except Exception:
         raise
 
-async def speech_to_text(audio_bytes):
-    try:
-        recognizer = sr.Recognizer()
-        with sr.AudioFile(io.BytesIO(audio_bytes)) as source:
-            audio_data = recognizer.record(source)
-        text = recognizer.recognize_google(audio_data)
-        return text
-    except sr.UnknownValueError:
-        raise
-    except sr.RequestError as e:
-        print(f'Could not request results from Google Speech Recognition service - {e}')
-        raise
-    except Exception:
-        raise
+# async def speech_to_text(audio_bytes):
+#     try:
+#         recognizer = sr.Recognizer()
+#         with sr.AudioFile(io.BytesIO(audio_bytes)) as source:
+#             audio_data = recognizer.record(source)
+#         text = recognizer.recognize_google(audio_data)
+#         return text
+#     except sr.UnknownValueError:
+#         raise
+#     except sr.RequestError as e:
+#         print(f'Could not request results from Google Speech Recognition service - {e}')
+#         raise
+#     except Exception:
+#         raise
 
 async def parse_intent(text):
     try:
@@ -206,16 +206,16 @@ def check_values_for_main_intent(intent, session_data):
     except Exception:
         raise
 
-def speak(text):
-    try:
-        tts = gTTS(text=text, lang='en')
-        tts.save("output.mp3")
-        playsound("output.mp3")
-        os.remove("output.mp3")
-    except FileNotFoundError:
-        print("Audio file 'output.mp3' not found for removal.")
-    except Exception:
-        raise
+# def speak(text):
+#     try:
+#         tts = gTTS(text=text, lang='en')
+#         tts.save("output.mp3")
+#         playsound("output.mp3")
+#         os.remove("output.mp3")
+#     except FileNotFoundError:
+#         print("Audio file 'output.mp3' not found for removal.")
+#     except Exception:
+#         raise
 
 
 import asyncio
